@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="lib/external/jquery.js"></script>
+<script src="lib/jquery-ui.js"></script>
+<link href="jquery-ui.css" rel="stylesheet">
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="data.js"></script>
+<script src="java.js"></script>
 </head>
 <body>
+<body>
+<div>
+<font face="sans-serif">Target Population: </font>
+</div>
+<div id="pop">
+    <input type="radio" id="pop1" name="pop"><label for="pop1">1. Uncontrolled</label>
+    <input type="radio" id="pop2" name="pop"><label for="pop2">2. Untreated</label>
+    <input type="radio" id="pop3" name="pop"><label for="pop3">3. Undiagnosed</label>
+	<input type="radio" id="pop4" name="pop" checked="checked"><label for="pop4">4. At-Risk</label>
+  </div>
+<div>
+<font face="sans-serif">View By: </font>
+</div>
+  <div id="view">
+    <input type="radio" id="intervention" name="view"><label for="intervention">Intervention</label>
+    <input type="radio" id="outcome" name="view" checked="checked"><label for="outcome">Health Outcome</label>
+  </div>
+  
 <svg id="my-svg">
   </svg>
-<text>hello world</text>
 </body>
 </html>
